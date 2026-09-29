@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy – Fitbit MCP (personal)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p><a href="./">← Fitbit MCP (personal)</a></p>
+    <h1>Privacy Policy</h1>
+    <p class="muted">Last updated: 29 September 2026</p>
+
+    <h2>What this app is</h2>
+    <p>
+      Fitbit MCP (personal) is a single-user tool that runs on its owner's own computer and lets a local
+      AI assistant read the owner's Fitbit data from the Google Health API. It is not a public service.
+    </p>
+
+    <h2>Data accessed</h2>
+    <p>
+      With your consent, the app reads data from your Google Health account using read-only OAuth scopes:
+      activity and fitness, sleep, health metrics and measurements, nutrition, profile and settings.
+      It does not request write, ECG or irregular-rhythm scopes and cannot create, modify or delete your data.
+    </p>
+
+    <h2>How data is used and stored</h2>
+    <ul>
+      <li>Data is fetched on request and passed to the AI assistant running on the same computer, only to answer the signed-in user's own questions.</li>
+      <li>OAuth tokens and app settings are stored only on that computer, in the user's home folder (<code>~/.google-health-mcp</code>).</li>
+      <li>No data is sent to any server operated by this project. The app connects only to Google's OAuth and Google Health API endpoints.</li>
+    </ul>
+
+    <h2>Sharing</h2>
+    <p>
+      Data obtained from Google APIs is not sold, shared with third parties, used for advertising, or used
+      to train models. This app's use of information received from Google APIs adheres to the
+      <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+      including the Limited Use requirements.
+    </p>
+
+    <h2>Revoking access and deleting data</h2>
+    <ul>
+      <li>Revoke access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+      <li>Delete local data by removing the <code>~/.google-health-mcp</code> folder.</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: open an issue at <a href="https://github.com/kaeldrin-gh/fitbit-mcp-oauth/issues">github.com/kaeldrin-gh/fitbit-mcp-oauth/issues</a>.</p>
+  </main>
+</body>
+</html>
